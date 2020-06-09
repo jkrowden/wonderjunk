@@ -1,0 +1,21 @@
+/* Action container/wrapper */
+#action {
+    background-color: grey;
+    width: 100%;
+    max-width: 100%;
+    /* justify-content: space-evenly; */
+
+    height: 15vh;
+
+    position: sticky;
+    bottom: 0;
+
+    border-bottom: 5px solid black;
+    border-right: 5px solid black;
+    border-left: 5px solid black;
+}
+
+.action-btn {
+    height: 3em;
+    width: 4em;
+}

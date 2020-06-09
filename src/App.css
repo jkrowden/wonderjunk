@@ -1,38 +1,99 @@
 .App {
   text-align: center;
-}
+  background-color: white;
+  /* position: relative; */
+  min-height: 100%;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: 'Lexend Giga', sans-serif;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+body, html {
+  height: 100%;
+}
+
+
+/* Media Queries */
+
+/* Regular size phones */
+@media only screen and (min-width: 320px) {
+  .App {
+    background-color: red;
   }
-  to {
-    transform: rotate(360deg);
+
+  #account {
+    width: 85%;
+  }
+
+}
+
+/* Plus size phones */
+@media only screen and (min-width: 410px) {
+  .App {
+    background-color: lightgoldenrodyellow;
+  }
+}
+
+/* iPad/Tablet resolution */
+@media only screen and (min-width: 768px) {
+  .App {
+    background-color: lightblue;
+  }
+
+}
+
+/* 1080p Monitors (MOST COMMON) */
+@media only screen and (min-width: 1100px) {
+  .App {
+    background-color: green;
+  }
+
+  #account {
+    width: 60%;
+  }
+}
+
+/* 2K Monitors (MINE) */
+@media only screen and (min-width: 1440px) {
+  .App {
+    background-color: blue;
+  }
+
+  #account {
+    width: 50%;
+  }
+
+  .spacer-lg {
+    height: 10em;
+  }
+
+  .spacer-sm {
+    height: 4em;
+  }
+}
+
+/* 4K Monitor/TV */
+@media only screen and (min-width: 2160px) {
+  .App {
+    background-color: lightskyblue;
+  }
+
+  #account {
+    width: 50%;
+  }
+
+  .spacer-lg {
+    height: 15em;
+  }
+
+  .spacer-sm {
+    height: 4em;
+  }
+
+  p{
+    font-size: 140px;
   }
 }
